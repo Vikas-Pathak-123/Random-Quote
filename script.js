@@ -48,6 +48,7 @@ const copyContent = async () => {
   try {
     await navigator.clipboard.writeText(`"${quotes.innerText}" ${author.innerText}`);
     console.log("Content copied to clipboard");
+    alert("Content copied to clipboard");
   } catch (err) {
     console.error("Failed to copy: ", err);
   }
